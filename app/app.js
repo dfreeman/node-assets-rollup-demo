@@ -3,6 +3,10 @@ import Resolver from './resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
 
+import mapValues from 'lodash/mapValues';
+
+console.log(mapValues({ foo: 'bar' }, value => value.toUpperCase()));
+
 let App;
 
 Ember.MODEL_FACTORY_INJECTIONS = true;
